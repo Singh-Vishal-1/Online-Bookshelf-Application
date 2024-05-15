@@ -1,0 +1,651 @@
+/* import google font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  /*google font*/
+  text-decoration: none;
+  list-style: none;
+
+  color: #142a17;
+}
+
+/* BODY STYLES for different pages */
+
+body {
+  background-image: radial-gradient(rgba(70, 114, 69, 0.896),
+      rgba(153, 248, 175, 0.75)), url(../images/background.jpg);
+
+  min-height: 100vh;
+
+}
+
+.searchbody {
+  background-image: linear-gradient(transparent, #85d79c);
+}
+
+/* for main tags of the pages */
+.register_main,
+.forgot_main,
+.addbook_main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100vw;
+}
+
+.details_main {
+  display: flex;
+  font-size: 1.1em;
+
+  margin-left: 1em;
+  font-family: 'Roboto', sans-serif;
+
+  color: #142a17;
+}
+
+/* NAVIGATION and HEADER STYLES */
+header {
+  background-color: #142a17;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1em;
+  padding: .4em;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: white;
+  flex: 2;
+  text-align: center;
+}
+
+/* The home page heading  */
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1em 0;
+
+}
+
+h2 {
+  font-size: 1.6em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1em 0;
+
+}
+
+nav {
+  background: #142a17;
+  height: 6em;
+  width: 100%
+}
+
+label.logo {
+  color: white;
+  font-size: 2em;
+  line-height: 3em;
+  padding: 0 1.2em;
+  font-weight: bold;
+}
+
+nav ul {
+  float: right;
+  margin-right: 1em;
+  color: white;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 4em;
+  margin: .5em;
+  font-size: 1.2em;
+
+}
+
+nav ul li a:hover {
+  background-color: #addead;
+  border-radius: 0.5em;
+  cursor: pointer;
+  color: #142a17;
+}
+
+button:hover,
+a:hover {
+  background-color: #1f491f;
+  color: white;
+  border-radius: 0.5em;
+  cursor: pointer;
+
+}
+
+
+nav a,
+nav a:visited,
+nav a:active {
+  color: whitesmoke;
+  text-align: center;
+
+  text-decoration: none;
+  /*remove underline*/
+}
+
+
+section {
+  background-color: #F1FFFA;
+  border: 0.2em solid #568259;
+  border-radius: 0.5em;
+  /*rounded corners*/
+}
+
+.heading img {
+  margin-right: 1em;
+
+}
+
+/* Register Page Specific */
+
+.register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: .8em;
+
+}
+
+.register img {
+  margin-right: 1em;
+}
+
+#register_form {
+
+  font-size: 1.1em;
+  border-top: 0.1em solid #568259;
+  padding: 2em;
+
+}
+
+#register_form label {
+
+
+  letter-spacing: 0.15em;
+}
+
+/*****************Search Page Form  Specific*********************/
+#search_form {
+  background-color: #F1FFFA;
+  border: 0.2em solid #568259;
+  border-radius: 0.5em;
+  /*rounded corners*/
+}
+
+.search-form div {
+  display: flex;
+  flex-direction: column;
+  padding: .5em;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+}
+
+.search-form div fieldset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+  margin: 1em;
+
+
+
+}
+
+
+.genres {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.genres a {
+  flex-direction: row;
+  margin: .3em 1em;
+  font-size: 1.2em;
+}
+
+/* Create Account Form specific */
+.requirements {
+  margin: .4em;
+}
+
+.submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+
+}
+
+/* Book Details Page Specific */
+.book-img,
+.container-1 {
+  box-shadow: 4px 8px 10px 4px rgba(0, 0, 0, 0.6);
+}
+
+.container-1 {
+
+  border: 2px solid black;
+  background-color: #b5d8b9;
+  line-height: 2em;
+  ;
+  max-width: 70vw;
+  margin: 0 1em;
+  padding: 1em;
+  border-radius: 0.5em;
+}
+
+.rating {
+
+  display: flex;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+
+/*******************The Search Results Display Window************************/
+.display {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2em;
+
+}
+
+.display>div {
+  margin-bottom: 1em;
+  padding: 1em;
+
+}
+
+.details {
+  margin: 0.5em 0;
+  line-height: 1.6em;
+  ;
+}
+
+.heading {
+  border-bottom: 0.2em solid #568259;
+}
+
+
+
+/* Home Page form specific */
+#home_page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Login Page Specific */
+.login_main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100vw;
+}
+
+.login img {
+  margin-right: 1em;
+
+}
+
+/* Login 2 is class of the div with the link to the create account or Forgot password pages */
+.login,
+.login2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+
+}
+
+.login2 div a {
+
+  box-shadow: none;
+  text-decoration: underline;
+}
+
+.login2 div a:hover {
+  background: none;
+  color: #142a17;
+}
+
+/* Forgot Password Page Specific */
+.forgot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.8em;
+
+
+}
+
+.forgot img {
+  margin-right: 1em;
+
+}
+
+/* Add Book Page Sepcific */
+.addbook {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: .8em;
+
+}
+
+.addbook h2 {
+  font-size: 1.8em;
+}
+
+.addbook img {
+  margin-right: 1em;
+
+}
+
+.description,
+.format {
+  display: flex;
+  align-items: flex-start;
+}
+
+.requirements {
+  margin: .4em;
+}
+
+.submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+
+}
+
+.select-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  min-width: 12em;
+  height: 4em;
+}
+
+.select-box {
+  border: none;
+  appearance: none;
+  padding: 0 2em 0 1em;
+  width: 100%;
+
+  background: rgba(9, 56, 36, 0.1);
+  font-size: 1em;
+}
+
+/* other Common Styles for Buttons & labels */
+
+
+section h2 {
+  font-size: 1.6em;
+  margin: 1em 0;
+
+}
+
+strong {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+form fieldset {
+  border-top: 0.3em solid #464E47;
+  border-bottom: 0.3em solid #464E47;
+}
+
+form label,
+legend {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+}
+
+a {
+  font-size: 1.2em;
+
+}
+
+button {
+  font-size: 1.2em;
+
+  border: 2px solid black;
+  border-radius: .5em;
+  margin: 0.6em;
+
+}
+
+/* Form and button styles */
+form input,
+textarea,
+select {
+  background: rgba(9, 56, 36, 0.1);
+  /* mostly transparent green background*/
+  outline: none;
+  border-radius: 0.2em;
+  border: none;
+  font-size: 1em;
+  padding: .5em;
+
+
+}
+
+.addbook_form input {
+  width: 100%;
+}
+
+nav ul li a,
+button,
+a {
+
+  line-height: 1em;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+  margin: .8em .4em;
+  padding: .6em;
+  min-width: 4em;
+
+}
+
+/* Input type = range styles */
+
+/********** Range Input Styles **********/
+
+/*Range Reset*/
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 15rem;
+}
+
+/* Removing default focus */
+input[type="range"]:focus {
+  outline: none;
+}
+
+
+/* slider track */
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #142a17;
+  border-radius: 0.5rem;
+  height: 0.3rem;
+}
+
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -8px;
+  /* Centers thumb on the track */
+
+  /*custom styles*/
+  background-color: #408749;
+  height: 1.2rem;
+  border-radius: .5em;
+  width: .6rem;
+}
+input[type="range"]:focus::-webkit-slider-thumb {
+  border: 1px solid #196d38;
+  outline: 2px solid #135f3e;
+  outline-offset: 0.125rem;
+}
+#register_form .validation ul li.valid{
+  color:red;
+}
+
+#register_form .validation ul li.valid::before{
+  color:green;
+}
+
+
+footer {
+  margin-top: 1em;
+  margin-bottom: .6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+section {
+
+  margin: 1em 2em 2em 2em;
+  padding: 2em;
+}
+
+h2,
+input,
+label,
+select,
+div {
+  margin-bottom: 0.2em;
+  padding-top: .6em;
+  padding-bottom: .6em;
+
+
+
+}
+
+.book1,
+.book2,
+.book3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.buttons {
+  margin-top: 1em;
+}
+
+@media(max-width:64em) {
+  form {
+    font-size: 0.8em;
+  }
+
+  nav ul li {
+    font-size: 1em;
+  }
+
+  /* Book Details Page Specific */
+  .details_main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container-1 {
+    margin-top: 1em;
+  }
+}
+
+@media(max-width:78em) {
+  nav ul {
+
+    margin-right: .4em;
+
+  }
+
+  nav ul li {
+
+    font-size: .8em;
+    background-color: #142a17;
+    border-radius: 0.5em;
+
+  }
+
+  nav ul li a:hover {
+    background: none;
+    color: white;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  section h2 {
+    font-size: 1.4em;
+
+  }
+
+
+  /*****************the search results display*******************/
+  .display {
+
+    margin-top: 1em;
+  }
+
+
+  form div {
+    display: block;
+    height: auto;
+
+
+  }
+
+  .display {
+    display: block;
+    margin-top: 2em;
+  }
+
+  .genres a {
+    flex-direction: row;
+    margin: .3em .4em;
+    font-size: .7em;
+  }
+
+}
